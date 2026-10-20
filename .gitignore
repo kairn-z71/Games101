@@ -1,0 +1,28 @@
+# Allow only this course's Markdown notes, required images and repository docs.
+/*
+!/.gitignore
+!/README.md
+!/Lessons/
+!/Pictures/
+
+/Lessons/*
+!/Lessons/*.md
+
+/Pictures/*
+!/Pictures/*.png
+!/Pictures/*.jpg
+!/Pictures/*.jpeg
+!/Pictures/*.webp
+!/Pictures/*.gif
+!/Pictures/*.svg
+
+# Credential material and disposable files stay ignored even inside allowed dirs.
+.env
+.env.*
+*.key
+*.pem
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+Desktop.ini
